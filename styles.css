@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #e8e8e8; 
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: #ed0808;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    text-align: center;
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: .25rem;
+}
+
+h1 {
+    font-size: 6rem;
+    margin-bottom: 0;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5); /* Add drop shadow */
+    width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.email-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.email-text {
+    font-size: 2rem;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5); /* Add drop shadow */
+}
+
+.email-link {
+    font-size: 8rem;
+    color: #ed0808;
+    text-decoration: underline;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add drop shadow */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/* Add responsive styling for the doggyland logo */
+.doggyland-logo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: -40px;
+}
+
+h3 {
+    margin-top: -20px;
+    margin-bottom: 0;
+}
+
+/* Media queries for responsive text size */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 5rem;
+    }
+    
+    .email-text, .email-link {
+        font-size: 1.5rem;
+    }
+    
+    .doggyland-logo {
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .email-text, .email-link {
+        font-size: 1.2rem;
+    }
+    
+    .doggyland-logo {
+        max-width: 70%;
+    }
+}
